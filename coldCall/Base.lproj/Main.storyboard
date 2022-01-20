@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="coldCall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sM-Fc-FRg">
+                                <rect key="frame" x="90" y="762" width="234" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="FIP-aj-Z5o"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cold Call">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.47718188159449082" green="0.95296227779513476" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="strokeColor" red="0.47718188160000002" green="0.95296227779999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleBody"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="coldCallButtunPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D5H-Tb-Qan"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uve-mq-0NC">
+                                <rect key="frame" x="99" y="285" width="216" height="370"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="VVR-kV-Q9K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="75"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFt-fL-Zuw">
+                                <rect key="frame" x="20" y="116" width="374" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="JRn-AP-JZT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8sM-Fc-FRg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="9Xg-rO-fvV"/>
+                            <constraint firstItem="uve-mq-0NC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="Gcf-RV-VBu"/>
+                            <constraint firstItem="DFt-fL-Zuw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="JuA-pB-Tsr"/>
+                            <constraint firstItem="8sM-Fc-FRg" firstAttribute="top" secondItem="uve-mq-0NC" secondAttribute="bottom" constant="107" id="KdL-81-YxP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uve-mq-0NC" secondAttribute="trailing" constant="99" id="MF0-6G-Vny"/>
+                            <constraint firstItem="8sM-Fc-FRg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.565217" id="RVx-sm-TBM"/>
+                            <constraint firstItem="8sM-Fc-FRg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0345982" id="XEu-uz-hZE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8sM-Fc-FRg" secondAttribute="trailing" constant="90" id="aMq-rr-Ftp"/>
+                            <constraint firstItem="uve-mq-0NC" firstAttribute="top" secondItem="DFt-fL-Zuw" secondAttribute="bottom" constant="101" id="adK-cE-NqU"/>
+                            <constraint firstItem="DFt-fL-Zuw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lxd-PA-Hit"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8sM-Fc-FRg" secondAttribute="bottom" constant="69" id="tGb-ko-GCb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DFt-fL-Zuw" secondAttribute="trailing" constant="20" id="x36-fB-NwV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="DFt-fL-Zuw" id="CWj-iB-yJl"/>
+                        <outlet property="numberLabel" destination="uve-mq-0NC" id="gEz-9s-wCM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
